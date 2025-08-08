@@ -102,37 +102,31 @@ export const bannerData = [
 
 export const categoryData = [
   {
-    imgSrc: "/images/section/categories-1.jpg",
-    title: "Desks Wood",
+    imgSrc: "/images/section/leadman-20-front.jpg",
+    title: "Competition",
     items: "12 items",
     delay: "0s",
   },
   {
-    imgSrc: "/images/section/categories-2.jpg",
-    title: "Office Chairs",
+    imgSrc: "/images/section/leadman-25-crumb-front.jpg",
+    title: "Crossfit",
     items: "35 items",
     delay: "0.1s",
   },
   {
-    imgSrc: "/images/section/categories-3.jpg",
-    title: "Storage Office",
-    items: "28 items",
-    delay: "0.2s",
-  },
-  {
-    imgSrc: "/images/section/categories-4.jpg",
-    title: "Decor Office",
-    items: "34 items",
-    delay: "0.3s",
-  },
-  {
-    imgSrc: "/images/section/categories-5.jpg",
-    title: "Lighting",
+    imgSrc: "/images/section/leadman-barbell-20-black.jpg",
+    title: "Barbell",
     items: "21 items",
     delay: "0.4s",
   },
   {
-    imgSrc: "/images/section/categories-6.jpg",
+    imgSrc: "/images/section/leadman-dumbell-1.jpg",
+    title: "Dumbells",
+    items: "18 items",
+    delay: "0.5s",
+  },
+  {
+    imgSrc: "/images/section/leadman-storage-1.jpg",
     title: "Accessories",
     items: "18 items",
     delay: "0.5s",

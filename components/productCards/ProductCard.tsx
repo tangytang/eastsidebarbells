@@ -74,7 +74,7 @@ export default function ProductCard({
   };
 
   const renderProductImage = () => (
-    <Link href={`/product-detail/${product.id}`} className="image-wrap">
+    <Link href={``} className="image-wrap">
       <Image
         className="lazyload img-product"
         src={currentImage ? currentImage : product.imgSrc}
