@@ -1,0 +1,70 @@
+@use "sass:meta";
+// fonts
+@import "../fonts/fonts.css";
+@import "../fonts/font-icons.css";
+
+// core CSS
+@import "../css/bootstrap-select.min.css";
+@import "../css/bootstrap.min.css";
+@import "../css/swiper-bundle.min.css";
+@import "../css/animate.css";
+@include meta.load-css("app.scss");
+@media only screen and (max-width: 992px) {
+  .footer .footer-col-block .tf-collapse-content {
+    overflow-y: hidden;
+    display: block;
+    height: 0px;
+    transition: 0.5s;
+  }
+}
+.tfSubscribeMsg {
+  display: none;
+  max-height: 0px;
+  // transition: 0.4s;
+  overflow: hidden;
+  &.active {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 180px;
+    display: block;
+  }
+}
+.jarallax-container {
+  div {
+    transition: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+.rc-slider .rc-slider-handle {
+  border: solid 2px var(--Onsurface);
+  opacity: 1 !important;
+  background-color: #fff !important;
+  width: 20px;
+  border-radius: 10px !important;
+  height: 20px;
+
+  margin-top: -9px;
+}
+
+.rc-slider .rc-slider-handle:hover {
+  border-color: var(--Onsurface);
+}
+
+.rc-slider .rc-slider-handle-dragging {
+  border-color: var(--Onsurface) !important;
+  box-shadow: none !important;
+}
+
+.rc-slider .rc-slider-track,
+.rc-slider .rc-slider-tracks {
+  background-color: var(--Onsurface);
+}
+.product-details {
+  max-width: 100vw;
+  overflow: clip;
+}
+.category-active {
+  a {
+    color: var(--Primary) !important;
+  }
+}
