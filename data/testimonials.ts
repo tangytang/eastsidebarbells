@@ -32,16 +32,16 @@ export const testimonials = [
 export const testimonialData = [
   {
     quote:
-      "Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
-    author: "Lisa K.",
-    role: "Stylist",
+      "Su was incredibly helpful in helping me select the best equipment for my strength needs. The equipment remains as good as new for the past year, and I have no regrets purchasing such quality gym equipment.",
+    author: "Lisa ",
+    role: "Crossfit Box Owner",
     wow: true,
   },
   {
     quote:
-      "Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
-    author: "Lisa K.",
-    role: "Stylist",
+      "Ivan was very patient and helped me select the best equipment for my strength needs. The equipment remains as good as new for the past year, and I have no regrets purchasing such quality gym equipment.",
+    author: "Noel",
+    role: "Gym Bro",
     wow: false,
   },
 ];

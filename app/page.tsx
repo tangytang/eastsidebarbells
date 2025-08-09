@@ -12,6 +12,7 @@ import React from "react";
 import Features from "@/components/common/Features";
 
 import type { Metadata } from "next";
+import Topbar2 from "@/components/headers/Topbar2";
 
 export const metadata: Metadata = {
   title: "Home 03 || GearO - Office equipment eCommerce React Nextjs Template",
@@ -21,13 +22,13 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <div className="space-1"></div>
+      <Topbar2 />
       <Header2 />
       <Hero />
       <Categories />
       <Products1 cardStyle={3} />
       <Lookbook />
-      <Products2 />
+      {/* <Products2 /> */}
       <Testimonials />
       <Collection />
       <Blogs parentClass="flat-spacing-2 section-news-insight" />

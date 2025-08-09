@@ -43,13 +43,13 @@ export default function Topbar2() {
                 <SwiperSlide className="swiper-slide">
                   <p className="text-caption-1 ">
                     Free shipping on all orders over{" "}
-                    <span className="text_primary">$20.00</span>
+                    <span className="text_primary">$200.00</span>
                   </p>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
                   <p className="text-caption-1 ">
                     Free shipping on all orders over{" "}
-                    <span className="text_primary">$20.00</span>
+                    <span className="text_primary">$200.00</span>
                   </p>
                 </SwiperSlide>
               </Swiper>

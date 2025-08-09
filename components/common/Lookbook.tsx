@@ -21,7 +21,7 @@ export default function Lookbook() {
               className="lazyload"
               data-src="/images/banner/banner-lookbook-1.jpg"
               alt="banner-cls"
-              src="/images/banner/banner-lookbook-1.jpg"
+              src="/images/section/home-gym-singapore.jpg"
               width={1184}
               height={876}
             />
@@ -57,14 +57,15 @@ export default function Lookbook() {
       <div className="right-product">
         <div className="heading-section">
           <h3 className="wow fadeInUp">
-            Start With These <br />
-            Curated Spaces
+            Build Your Dream <br />
+            Home Gym
           </h3>
           <p
             className="text-body-default text_secondary wow fadeInUp"
             data-wow-delay="0s"
           >
-            Comfort and style meet to blissful perfection
+            Quality equipment and interior design for fitness enthusiasts and
+            gym owners.
           </p>
         </div>
         <Swiper

@@ -12,15 +12,16 @@ interface Option {
 
 const optionsData: Option[] = [
   {
+    value: "sg",
+    thumbnail: "/images/country/sg.svg",
+    text: "SGD",
+    selected: true,
+  },
+  {
     value: "us",
     thumbnail: "/images/country/us.svg",
     text: "USD",
     selected: true,
-  },
-  {
-    value: "vn",
-    thumbnail: "/images/country/vn.svg",
-    text: "VND",
   },
 ];
 
@@ -68,7 +69,7 @@ export default function CurrencySelect({
         type="button"
         tabIndex={-1}
         className={`btn dropdown-toggle btn-light ${isDDOpen ? "show" : ""}`}
-        title="USD $ | United States"
+        title="SGD $ | Singapore"
       >
         <div className="filter-option">
           <div className="filter-option-inner">

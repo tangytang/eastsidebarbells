@@ -21,14 +21,15 @@ export default function Collection() {
                 <div className="cls-heading">
                   <h3 className="wow fadeInUp">
                     <a href={`#`} className="link text_white">
-                      Super Sale Up To 50%
+                      Eastside Resale Program
                     </a>
                   </h3>
                   <p
                     className="text_white text-body-default wow fadeInUp"
                     data-wow-delay="0.1s"
                   >
-                    Reserved for special occasions
+                    Buy and sell quality second-hand strength equipment such as:
+                    barbells, weight plates, dumbbells, benches, and more.
                   </p>
                 </div>
                 <a
