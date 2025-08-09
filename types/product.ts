@@ -3,6 +3,8 @@ interface Swatch {
   img: string;
   bgClass: string;
 }
+
+export type Availability = "All" | "inStock" | "outOfStock";
 export interface Product {
   filterBrands: string[];
   filterCategory: string[];
