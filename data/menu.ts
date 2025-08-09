@@ -120,10 +120,8 @@ export const blogLinks = [
 
 export const otherPages = [
   { href: "/about", label: "About Us" },
-  { href: "/faqs", label: "Faqs" },
-  { href: "/store-list", label: "Store List" },
+  { href: "/blog", label: "Blog" },
   { href: "/term-of-use", label: "Term Of Use" },
-  { href: "/contact", label: "Contact Us" },
 ];
 
 export const demoPages = [

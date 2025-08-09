@@ -1,5 +1,5 @@
 export const categories = [
-  { name: "Bags", count: 112, active: false },
+  { name: "Rubber", count: 112, active: false },
   { name: "Booking", count: 32, active: false },
   { name: "Clothing", count: 42, active: false },
   { name: "Women", count: 65, active: true },

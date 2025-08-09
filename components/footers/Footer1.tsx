@@ -107,11 +107,11 @@ export default function Footer1() {
                             {(i === 0
                               ? [
                                   ["About Us", "/about"],
-                                  ["Our Stories", "/store-list"],
-                                  ["Size Guide", "/product-detail/1"],
-                                  ["Contact us", "/contact"],
+                                  ["Personal Training", "/blog"],
+                                  ["Blog", "/blog"],
                                 ]
                               : [
+                                  ["FAQ", "/blog"],
                                   ["Shipping", "/product-detail/1"],
                                   ["Return & Refund", "/product-detail/1"],
                                   ["Privacy Policy", "/term-of-use"],
@@ -133,9 +133,11 @@ export default function Footer1() {
                     ))}
                   </div>
 
-                  <div className="footer-phone-number">
-                    <h4 className="text_white number">+61 (9) 567 8765 43</h4>
-                    <h4 className="text_white mail">hello@yourname.com</h4>
+                  <div id="contact-me" className="footer-phone-number">
+                    <h4 className="text_white number">+65 9818 2573</h4>
+                    <h4 className="text_white mail">
+                      strong@eastsidebarbells.com
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -212,7 +214,7 @@ export default function Footer1() {
               <div className="footer-bottom-wrap">
                 <div className="left">
                   <p className="text-body-default text_white">
-                    Copyright ©2025 GearO. All Rights Reserved.
+                    © 2023 Eastside Barbells. All Rights Reserved.
                   </p>
                 </div>
                 <div className="center">
@@ -220,7 +222,7 @@ export default function Footer1() {
                     <CurrencySelect boxStyle light />
                   </div>
                 </div>
-                <div className="tf-payment">
+                {/* <div className="tf-payment">
                   <ul>
                     {[1, 2, 3, 4, 5, 6].map((i) => (
                       <li key={i}>
@@ -233,7 +235,7 @@ export default function Footer1() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

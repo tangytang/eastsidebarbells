@@ -32,7 +32,7 @@ export default function page() {
       <Testimonials />
       <Collection />
       <Blogs parentClass="flat-spacing-2 section-news-insight" />
-      <ShopGram />
+      {/* <ShopGram /> */}
       <Features parentClass="flat-spacing-2 pt-0" />
     </>
   );
