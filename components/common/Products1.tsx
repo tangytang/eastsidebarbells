@@ -15,12 +15,13 @@ export default function Products1({
         <div className="row">
           <div className="col-12">
             <div className="heading-section text-center">
-              <h3 className="wow fadeInUp">Our Picks For You</h3>
+              <h3 className="wow fadeInUp">Buy Quality Weights</h3>
               <p
                 className="text-body-default text_secondary wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                Fresh styles just in! Elevate your look.
+                Load your barbells with our premium bumpers and plates for a
+                solid workout.
               </p>
             </div>
             <div className="tf-grid-layout tf-col-2 lg-col-4">

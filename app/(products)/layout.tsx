@@ -14,7 +14,7 @@ export default function layout({
       <Topbar2 />
       <Header1 parentClass="header-default border-bot" />
       <Breadcumb
-        imgSrc="/images/page-title/page-title-9.jpg"
+        imgSrc="/images/banner/eastside-banner-2.webp"
         pageName="Shop"
         pageTitle="Shop"
         parentPage=""

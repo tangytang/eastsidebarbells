@@ -24,7 +24,7 @@ export default function Products2({ parentClass = "flat-spacing-5" }) {
                 </p>
               </div>
               <div className="right wow fadeInUp">
-                <Link href={`/shop-default`} className="btn-line">
+                <Link href={`/shop`} className="btn-line">
                   <span>View All Products</span>
                 </Link>
               </div>

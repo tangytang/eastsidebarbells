@@ -20,7 +20,6 @@ interface Product {
   title: string;
   oldPrice?: number | null;
   price: number;
-  swatches: Swatch[];
 }
 
 interface ProductCardProps {
@@ -146,18 +145,6 @@ export default function ProductCard({
           {isAddedtoCompareItem(product.id) ? "Compared" : "Compare"}
         </span>
       </a>
-
-      {!CARD_STYLES_WITHOUT_QUICKVIEW.includes(cardStyle) && (
-        <a
-          href="#quickView"
-          data-bs-toggle="modal"
-          onClick={handleQuickView}
-          className="box-icon quickview tf-btn-loading"
-        >
-          <span className="icon icon-eye" />
-          <span className="tooltip">Quick View</span>
-        </a>
-      )}
     </div>
   );
 
@@ -173,7 +160,6 @@ export default function ProductCard({
           Quick View
         </a>
       )}
-
       <a
         href="#shoppingCart"
         data-bs-toggle="modal"
@@ -182,18 +168,6 @@ export default function ProductCard({
       >
         {isAddedToCartProducts(product.id) ? "Already Added" : "Add to Cart"}
       </a>
-
-      {cardStyle === 3 && (
-        <a
-          href="#quickView"
-          data-bs-toggle="modal"
-          onClick={handleQuickView}
-          className="box-icon quickview tf-btn-loading"
-        >
-          <span className="icon icon-eye" />
-          <span className="tooltip">Quick View</span>
-        </a>
-      )}
     </div>
   );
 

@@ -164,19 +164,6 @@ export default function ProductCard2({ product }: ProductCardProps) {
                 {isAddedtoCompareItem(product.id) ? "Compared" : "Compare"}
               </span>
             </a>
-            <a
-              href="#quickView"
-              data-bs-toggle="modal"
-              onClick={() => {
-                if (product) {
-                  setQuickViewItem(product);
-                }
-              }}
-              className="box-icon quickview tf-btn-loading"
-            >
-              <span className="icon icon-eye" />
-              <span className="tooltip">Quick View</span>
-            </a>
           </div>
         </div>
       </div>

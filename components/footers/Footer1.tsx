@@ -102,14 +102,7 @@ export default function Footer1() {
                         +65 9818 2573
                       </a>
                     </h4>
-                    <h4 className="text_white mail">
-                      <a
-                        href="mailto:strong@eastsidebarbells.com?subject=Product%20Inquiry&body=Hi%2C%20I%27m%20interested%20in%20your%20products"
-                        className="text_white"
-                      >
-                        strong@eastsidebarbells.com
-                      </a>
-                    </h4>
+                    <h4 className="text_white mail">Whatsapp Us Today</h4>
                   </div>
                 </div>
 
@@ -145,8 +138,8 @@ export default function Footer1() {
                           {(i === 0
                             ? [
                                 ["Weightlifting Plates", "/shop"],
-                                ["Crossfit Bumper Plates", "/shop"],
-                                ["Barbells", "/shop"],
+                                ["Crossfit Bumper Plates", "/shop-crossfit"],
+                                ["Barbells", "/shop-bars"],
                                 ["About Us", "/about"],
                                 ["Personal Training", "/blog"],
                                 ["Blog", "/blog"],

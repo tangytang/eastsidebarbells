@@ -28,7 +28,7 @@ export default function Collections2() {
       >
         {categories.map((item, index) => (
           <SwiperSlide className="swiper-slide" key={index}>
-            <Link href={`/shop-default`} className="cls-item">
+            <Link href={`/shop`} className="cls-item">
               <div className="image">
                 <Image
                   className="lazyload"

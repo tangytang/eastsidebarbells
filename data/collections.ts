@@ -56,30 +56,28 @@ export const categories2 = [
   {
     iconClass: "icon-frame-4",
     title: "Desks Wood",
+    href: "/shop",
     itemCount: "12 items",
     delay: "0s",
   },
   {
     iconClass: "icon-frame-7",
     title: "Office Chairs",
+    href: "/shop",
     itemCount: "35 items",
     delay: "0.1s",
   },
   {
     iconClass: "icon-frame-6",
     title: "Storage Office",
+    href: "/shop",
     itemCount: "28 items",
     delay: "0.2s",
   },
   {
-    iconClass: "icon-frame-5",
-    title: "Decor Office",
-    itemCount: "34 items",
-    delay: "0.3s",
-  },
-  {
     iconClass: "icon-frame-4",
     title: "Accessories",
+    href: "/shop",
     itemCount: "18 items",
     delay: "0.4s",
   },
@@ -104,32 +102,23 @@ export const categoryData = [
   {
     imgSrc: "/images/section/leadman-20-front.jpg",
     title: "Competition",
-    items: "12 items",
+    href: "/shop",
+    items: "4 items",
     delay: "0s",
   },
   {
     imgSrc: "/images/section/leadman-25-crumb-front.jpg",
     title: "Crossfit",
-    items: "35 items",
+    href: "/shop-crossfit",
+    items: "4 items",
     delay: "0.1s",
   },
   {
     imgSrc: "/images/section/leadman-barbell-20-black.jpg",
     title: "Barbell",
-    items: "21 items",
+    href: "/shop-bars",
+    items: "1 items",
     delay: "0.4s",
-  },
-  {
-    imgSrc: "/images/section/leadman-dumbell-1.jpg",
-    title: "Dumbells",
-    items: "18 items",
-    delay: "0.5s",
-  },
-  {
-    imgSrc: "/images/section/leadman-storage-1.jpg",
-    title: "Accessories",
-    items: "18 items",
-    delay: "0.5s",
   },
 ];
 

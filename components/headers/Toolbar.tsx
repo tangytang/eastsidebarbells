@@ -5,7 +5,7 @@ export default function Toolbar() {
   return (
     <div className="tf-toolbar-bottom">
       <div className="toolbar-item">
-        <Link href={`/shop-default`}>
+        <Link href={`/shop`}>
           <div className="toolbar-icon">
             <span className="icon icon-squaresfour" />
           </div>

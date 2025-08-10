@@ -101,7 +101,7 @@ function normalizeCategories(
   if (!items) return [];
   return items.map((it) =>
     typeof it === "string"
-      ? { href: "/shop-default", label: it } // default link for legacy strings
+      ? { href: "/shop", label: it } // default link for legacy strings
       : { href: it.href, label: it.label }
   );
 }
@@ -202,7 +202,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                       ))}
                     </ul>
                     <div className="box-cate-bottom">
-                      <Link href="/shop-default" className="btn-line">
+                      <Link href="/shop" className="btn-line">
                         <span>View All Products </span>
                         <i className="icon-arrow-up-right" />
                       </Link>

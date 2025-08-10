@@ -2,7 +2,7 @@ export const shopPages = [
   {
     title: "Shop Layout",
     links: [
-      { href: "/shop-default", label: "Shop Default" },
+      { href: "/shop", label: "Shop Default" },
       { href: "/shop-list", label: "Shop List" },
       { href: "/shop-full-grid", label: "Shop Full Grid" },
       { href: "/shop-full-list", label: "Shop Full List" },

@@ -49,7 +49,7 @@ export default function Categories() {
             <div id="forChair" className="collapse">
               <ul className="facet-body">
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"
@@ -63,7 +63,7 @@ export default function Categories() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"
@@ -101,7 +101,7 @@ export default function Categories() {
             <div id="forDesk" className="collapse">
               <ul className="facet-body">
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"
@@ -115,7 +115,7 @@ export default function Categories() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"
@@ -153,7 +153,7 @@ export default function Categories() {
             <div id="forPhone" className="collapse">
               <ul className="facet-body">
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"
@@ -167,7 +167,7 @@ export default function Categories() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"
@@ -205,7 +205,7 @@ export default function Categories() {
             <div id="forLamp" className="collapse">
               <ul className="facet-body">
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"
@@ -219,7 +219,7 @@ export default function Categories() {
                   </Link>
                 </li>
                 <li>
-                  <Link href={`/shop-default`} className="item link">
+                  <Link href={`/shop`} className="item link">
                     <Image
                       className="avt"
                       alt="avt"

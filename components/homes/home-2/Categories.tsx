@@ -30,7 +30,7 @@ export default function Categories() {
                   </div>
                   <div className="content">
                     <h5 className="title">
-                      <Link href={`/shop-default`} className="link">
+                      <Link href={category.href} className="link">
                         {category.title}
                       </Link>
                     </h5>

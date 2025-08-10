@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <Products initialFilters={{ categories: ["Rubber"] }} />
+      <Products initialFilters={{ categories: ["accessory"] }} />
     </>
   );
 }

@@ -18,7 +18,7 @@ export default function Categories() {
               </p>
             </div>
             <div className="right wow fadeInUp">
-              <Link href={`/shop-default`} className="btn-line">
+              <Link href={`/shop`} className="btn-line">
                 <span>View All Products </span>
                 <i className="icon-arrow-up-right" />
               </Link>
@@ -32,7 +32,7 @@ export default function Categories() {
                 key={index}
               >
                 <div className="img-style">
-                  <Link href={`/shop-default`}>
+                  <Link href={category.href}>
                     <Image
                       alt=""
                       src={category.imgSrc}
@@ -43,7 +43,7 @@ export default function Categories() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <Link href={`/shop-default`} className="link">
+                    <Link href={category.href} className="link">
                       {category.title}
                     </Link>
                   </h5>

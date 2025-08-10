@@ -398,7 +398,7 @@ export default function Checkout() {
                   <div className="mx-4 my-4 text-center">
                     <div>Your Cart is Empty</div>
                     <Link
-                      href={`/shop-default`}
+                      href={`/shop`}
                       className="tf-btn  btn-white has-border mt-2 mx-auto"
                     >
                       Explore Products

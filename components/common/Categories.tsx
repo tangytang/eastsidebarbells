@@ -10,7 +10,7 @@ export default function Categories() {
             <div className="text-center flat-spacing pt-0 line-bottom-container">
               <div className="wrap-cls-img">
                 <div className="cls-img-item hover-img">
-                  <Link href={`/shop-default`} className="image img-style">
+                  <Link href={`/shop`} className="image img-style">
                     <Image
                       data-src="/images/section/collections-banner.jpg"
                       alt="Cls Image"
@@ -20,13 +20,13 @@ export default function Categories() {
                     />
                   </Link>
                   <h3>
-                    <Link className="link" href={`/shop-default`}>
+                    <Link className="link" href={`/shop`}>
                       Storage Solutions
                     </Link>
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img">
-                  <Link href={`/shop-default`} className="image img-style">
+                  <Link href={`/shop`} className="image img-style">
                     <Image
                       data-src="/images/section/collections-banner-1.jpg"
                       alt="Cls Image"
@@ -36,13 +36,13 @@ export default function Categories() {
                     />
                   </Link>
                   <h3>
-                    <Link className="link" href={`/shop-default`}>
+                    <Link className="link" href={`/shop`}>
                       Lighting
                     </Link>
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img">
-                  <Link href={`/shop-default`} className="image img-style">
+                  <Link href={`/shop`} className="image img-style">
                     <Image
                       data-src="/images/section/collections-banner-2.jpg"
                       alt="Cls Image"
@@ -52,13 +52,13 @@ export default function Categories() {
                     />
                   </Link>
                   <h3>
-                    <Link className="link" href={`/shop-default`}>
+                    <Link className="link" href={`/shop`}>
                       Office Chairs
                     </Link>
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img">
-                  <Link href={`/shop-default`} className="image img-style">
+                  <Link href={`/shop`} className="image img-style">
                     <Image
                       data-src="/images/section/collections-banner-3.jpg"
                       alt="Cls Image"
@@ -68,13 +68,13 @@ export default function Categories() {
                     />
                   </Link>
                   <h3>
-                    <Link className="link" href={`/shop-default`}>
+                    <Link className="link" href={`/shop`}>
                       Accessories
                     </Link>
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img">
-                  <Link href={`/shop-default`} className="image img-style">
+                  <Link href={`/shop`} className="image img-style">
                     <Image
                       data-src="/images/section/collections-banner-4.jpg"
                       alt="Cls Image"
@@ -84,13 +84,13 @@ export default function Categories() {
                     />
                   </Link>
                   <h3>
-                    <Link className="link" href={`/shop-default`}>
+                    <Link className="link" href={`/shop`}>
                       Decor Office
                     </Link>
                   </h3>
                 </div>
               </div>
-              <Link href={`/shop-default`} className="btn-line">
+              <Link href={`/shop`} className="btn-line">
                 <span>View All Categiories</span>
               </Link>
             </div>

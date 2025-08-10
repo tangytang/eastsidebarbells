@@ -59,7 +59,7 @@ export default function ShopCart() {
                 <div className="mx-4 my-4 text-center">
                   <div>Your Cart is Empty</div>
                   <Link
-                    href={`/shop-default`}
+                    href={`/shop`}
                     className="tf-btn  btn-white has-border mt-2 mx-auto"
                   >
                     Explore Products
@@ -292,10 +292,7 @@ export default function ShopCart() {
                     Process To Checkout
                     <i className="icon-arrow-up-right" />
                   </Link>
-                  <Link
-                    href={`/shop-default`}
-                    className="text-button text-center link"
-                  >
+                  <Link href={`/shop`} className="text-button text-center link">
                     Or continue shopping
                   </Link>
                 </div>

@@ -20,6 +20,85 @@ export default function ShoppingCart() {
   const removeItem = (id: number) => {
     setCartProducts((pre) => [...pre.filter((elm) => elm.id != id)]);
   };
+
+  const getCartListFromLS = (): any[] => {
+    if (typeof window === "undefined") return [];
+    const raw = localStorage.getItem("cartList");
+    if (!raw) return [];
+
+    let v: any = raw;
+    try {
+      v = JSON.parse(raw);
+    } catch {
+      /* keep as string */
+    }
+
+    // handle double-encoded JSON: "\"[...]" -> parse again
+    if (typeof v === "string") {
+      try {
+        v = JSON.parse(v);
+      } catch {
+        return [];
+      }
+    }
+
+    if (Array.isArray(v)) return v;
+    if (v && Array.isArray(v.items)) return v.items; // fallback shape
+    return [];
+  };
+
+  const handleWhatsAppOrder = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    const lsItems = getCartListFromLS();
+    const source = lsItems.length ? lsItems : cartProducts;
+
+    if (!Array.isArray(source) || !source.length) {
+      alert("Your cart is empty.");
+      return;
+    }
+
+    // normalize and merge by title
+    const normalized = source
+      .map((it: any) => ({
+        title: String(
+          it.title ?? it.name ?? it.productName ?? `Item #${it.id ?? ""}`
+        ).trim(),
+        quantity: Number(it.quantity ?? 1),
+      }))
+      .filter((x) => x.title && x.quantity > 0);
+
+    const mergedMap = normalized.reduce((acc, cur) => {
+      const key = cur.title.toLowerCase();
+      if (!acc[key]) acc[key] = { title: cur.title, quantity: 0 };
+      acc[key].quantity += cur.quantity;
+      return acc;
+    }, {} as Record<string, { title: string; quantity: number }>);
+
+    const merged = Object.values(mergedMap);
+    if (!merged.length) {
+      alert("Your cart is empty.");
+      return;
+    }
+
+    const header = "Order request via Eastsidebarbells";
+    const lines = merged
+      .map((it, i) => `${i + 1}. ${it.title} x ${it.quantity}`)
+      .join("\n");
+    const subtotal = `Subtotal: $${Number(totalPrice || 0).toFixed(2)}`;
+    const note = "Please confirm stock & delivery. Thank you!";
+    const message = `${header}\n\n${lines}\n\n${subtotal}\n${note}`;
+
+    // copy (best-effort; requires https + user gesture)
+    navigator.clipboard?.writeText(message).catch(() => {});
+
+    // open WhatsApp in new tab (no redirect of current page)
+    const phone = "6598182573"; // 65 + number, no plus sign
+    const wa = new URL(`https://wa.me/${phone}`);
+    wa.searchParams.set("text", message);
+    window.open(wa.toString(), "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="modal fullRight fade modal-shopping-cart" id="shoppingCart">
       <div className="modal-dialog">
@@ -100,7 +179,7 @@ export default function ShoppingCart() {
                         <div className="mx-4 my-4 text-center">
                           <div>Your Cart is Empty</div>
                           <Link
-                            href={`/shop-default`}
+                            href={`/shop`}
                             className="tf-btn  btn-white has-border mt-2 mx-auto"
                           >
                             Explore Products
@@ -186,118 +265,6 @@ export default function ShoppingCart() {
                   </div>
                 </div>
                 <div className="tf-mini-cart-bottom">
-                  <div className="tf-mini-cart-tool">
-                    <div
-                      className="tf-mini-cart-tool-btn btn-add-note"
-                      onClick={() => setOpenTool((pre) => (pre == 1 ? -1 : 1))}
-                    >
-                      <svg
-                        width={21}
-                        height={20}
-                        viewBox="0 0 21 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clipPath="url(#clip0_6133_36620)">
-                          <path
-                            d="M10 3.33325H4.16667C3.72464 3.33325 3.30072 3.50885 2.98816 3.82141C2.67559 4.13397 2.5 4.55789 2.5 4.99992V16.6666C2.5 17.1086 2.67559 17.5325 2.98816 17.8451C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8451C17.3244 17.5325 17.5 17.1086 17.5 16.6666V10.8333"
-                            stroke="#181818"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <path
-                            d="M16.25 2.0832C16.5815 1.75168 17.0312 1.56543 17.5 1.56543C17.9688 1.56543 18.4185 1.75168 18.75 2.0832C19.0815 2.41472 19.2678 2.86436 19.2678 3.3332C19.2678 3.80204 19.0815 4.25168 18.75 4.5832L10.8333 12.4999L7.5 13.3332L8.33333 9.99986L16.25 2.0832Z"
-                            stroke="#181818"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_6133_36620">
-                            <rect
-                              width={20}
-                              height={20}
-                              fill="white"
-                              transform="translate(0.833008)"
-                            />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <div className="text-caption-1">Note</div>
-                    </div>
-                    <div
-                      className="tf-mini-cart-tool-btn btn-estimate-shipping"
-                      onClick={() => setOpenTool((pre) => (pre == 2 ? -1 : 2))}
-                    >
-                      <svg
-                        width={20}
-                        height={20}
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.333 2.5H0.833008V13.3333H13.333V2.5Z"
-                          stroke="#181818"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M13.333 6.66675H16.6663L19.1663 9.16675V13.3334H13.333V6.66675Z"
-                          stroke="#181818"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M4.58333 17.4999C5.73393 17.4999 6.66667 16.5672 6.66667 15.4166C6.66667 14.266 5.73393 13.3333 4.58333 13.3333C3.43274 13.3333 2.5 14.266 2.5 15.4166C2.5 16.5672 3.43274 17.4999 4.58333 17.4999Z"
-                          stroke="#181818"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M15.4163 17.4999C16.5669 17.4999 17.4997 16.5672 17.4997 15.4166C17.4997 14.266 16.5669 13.3333 15.4163 13.3333C14.2657 13.3333 13.333 14.266 13.333 15.4166C13.333 16.5672 14.2657 17.4999 15.4163 17.4999Z"
-                          stroke="#181818"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <div className="text-caption-1">Shipping</div>
-                    </div>
-                    <div
-                      className="tf-mini-cart-tool-btn btn-add-coupon"
-                      onClick={() => setOpenTool((pre) => (pre == 3 ? -1 : 3))}
-                    >
-                      <svg
-                        width={21}
-                        height={20}
-                        viewBox="0 0 21 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17.3247 11.1751L11.3497 17.1501C11.1949 17.305 11.0111 17.428 10.8087 17.5118C10.6064 17.5957 10.3895 17.6389 10.1705 17.6389C9.95148 17.6389 9.7346 17.5957 9.53227 17.5118C9.32994 17.428 9.14613 17.305 8.99134 17.1501L1.83301 10.0001V1.66675H10.1663L17.3247 8.82508C17.6351 9.13735 17.8093 9.55977 17.8093 10.0001C17.8093 10.4404 17.6351 10.8628 17.3247 11.1751V11.1751Z"
-                          stroke="#181818"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M5.99902 5.83325H6.00902"
-                          stroke="#181818"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <div className="text-caption-1">Coupon</div>
-                    </div>
-                  </div>
                   <div className="tf-mini-cart-bottom-wrap">
                     <div className="tf-cart-totals-discounts">
                       <h5>Subtotal</h5>
@@ -335,15 +302,15 @@ export default function ShoppingCart() {
                       >
                         View cart
                       </Link>
-                      <Link
-                        href={`/checkout`}
+                      <button
                         className="tf-btn w-100 btn-onsurface"
+                        onClick={handleWhatsAppOrder}
                       >
-                        Check Out
-                      </Link>
+                        Order via WhatsApp
+                      </button>
                     </div>
                     <div className="text-center">
-                      <Link className="link btn-line" href={`/shop-default`}>
+                      <Link className="link btn-line" href={`/shop`}>
                         Or continue shopping
                       </Link>
                     </div>
