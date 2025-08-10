@@ -90,105 +90,30 @@ export default function Footer1() {
           <div className="col-12">
             <div className="footer-body">
               <div className="footer-left">
-                <div className="footer-infor flex-grow-1">
-                  <div className="footer-menu">
-                    {["Infomation", "Customer Services"].map((heading, i) => (
-                      <div className="footer-col-block" key={i}>
-                        <h5
-                          ref={(el) => {
-                            if (el) headingRefs.current[i] = el;
-                          }}
-                          className="footer-heading text_white footer-heading-mobile"
-                        >
-                          {heading}
-                        </h5>
-                        <div className="tf-collapse-content">
-                          <ul className="footer-menu-list">
-                            {(i === 0
-                              ? [
-                                  ["About Us", "/about"],
-                                  ["Personal Training", "/blog"],
-                                  ["Blog", "/blog"],
-                                ]
-                              : [
-                                  ["FAQ", "/blog"],
-                                  ["Shipping", "/product-detail/1"],
-                                  ["Return & Refund", "/product-detail/1"],
-                                  ["Privacy Policy", "/term-of-use"],
-                                  ["Terms & Conditions", "/term-of-use"],
-                                ]
-                            ).map(([label, href], j) => (
-                              <li className="text-body-default" key={j}>
-                                <Link
-                                  href={href}
-                                  className="link footer-menu_item"
-                                >
-                                  {label}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
+                <div className="footer-infor flex-grow-1 mb-5">
                   <div id="contact-me" className="footer-phone-number">
-                    <h4 className="text_white number">+65 9818 2573</h4>
+                    <h4 className="text_white number">
+                      <a
+                        href="https://wa.me/6598182573?text=Hi%2C%20I%27m%20interested%20in%20your%20products"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text_white"
+                      >
+                        +65 9818 2573
+                      </a>
+                    </h4>
                     <h4 className="text_white mail">
-                      strong@eastsidebarbells.com
+                      <a
+                        href="mailto:strong@eastsidebarbells.com?subject=Product%20Inquiry&body=Hi%2C%20I%27m%20interested%20in%20your%20products"
+                        className="text_white"
+                      >
+                        strong@eastsidebarbells.com
+                      </a>
                     </h4>
                   </div>
                 </div>
-              </div>
 
-              <div className="footer-col-block footer-newsletter">
-                <h3
-                  className="footer-heading footer-heading-mobile text_white"
-                  ref={(el) => {
-                    if (el) headingRefs.current = [...headingRefs.current, el];
-                  }}
-                >
-                  Stay in the loop with Weekly newsletters
-                </h3>
-                <div className="tf-collapse-content">
-                  <div
-                    className={`tfSubscribeMsg footer-sub-element ${
-                      showMessage ? "active" : ""
-                    }`}
-                  >
-                    {success ? (
-                      <p style={{ color: "rgb(52, 168, 83)" }}>
-                        You have successfully subscribed.
-                      </p>
-                    ) : (
-                      <p style={{ color: "red" }}>Something went wrong</p>
-                    )}
-                  </div>
-                  <form
-                    onSubmit={sendEmail}
-                    className="form-newsletter subscribe-form"
-                  >
-                    <div className="subscribe-content">
-                      <fieldset className="email">
-                        <input
-                          type="email"
-                          name="email"
-                          className="subscribe-email"
-                          placeholder="Enter your e-mail"
-                          aria-required="true"
-                        />
-                      </fieldset>
-                      <div className="button-submit">
-                        <button
-                          className="subscribe-button text-body-default"
-                          type="submit"
-                        >
-                          Subscribe <i className="icon-arrow-up-right" />
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                {/* <div className="tf-collapse-content">
                   <ul className="tf-social-icon type-2">
                     {["facebook", "x", "instagram", "telegram"].map(
                       (platform, index) => (
@@ -200,6 +125,53 @@ export default function Footer1() {
                       )
                     )}
                   </ul>
+                </div> */}
+              </div>
+
+              <div className="footer-col-block footer-newsletter">
+                <div className="footer-menu">
+                  {["Infomation", "Customer Services"].map((heading, i) => (
+                    <div className="footer-col-block" key={i}>
+                      <h5
+                        ref={(el) => {
+                          if (el) headingRefs.current[i] = el;
+                        }}
+                        className="footer-heading text_white footer-heading-mobile"
+                      >
+                        {heading}
+                      </h5>
+                      <div className="tf-collapse-content">
+                        <ul className="footer-menu-list">
+                          {(i === 0
+                            ? [
+                                ["Weightlifting Plates", "/shop"],
+                                ["Crossfit Bumper Plates", "/shop"],
+                                ["Barbells", "/shop"],
+                                ["About Us", "/about"],
+                                ["Personal Training", "/blog"],
+                                ["Blog", "/blog"],
+                              ]
+                            : [
+                                ["FAQ", "/faqs"],
+                                ["Shipping", "/product-detail/1"],
+                                ["Return & Refund", "/product-detail/1"],
+                                ["Privacy Policy", "/term-of-use"],
+                                ["Terms & Conditions", "/term-of-use"],
+                              ]
+                          ).map(([label, href], j) => (
+                            <li className="text-body-default" key={j}>
+                              <Link
+                                href={href}
+                                className="link footer-menu_item"
+                              >
+                                {label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

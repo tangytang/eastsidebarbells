@@ -35,7 +35,6 @@ const MENU_JSON_STRING = `
   "otherPages": [
     { "href": "/about", "label": "About Us" },
     { "href": "/blog", "label": "Blog" },
-    { "href": "/contact", "label": "Contact" },
     { "href": "/faqs", "label": "FAQ" }
   ],
   "shopDetailPages": [
@@ -55,10 +54,9 @@ const MENU_JSON_STRING = `
     }
   ],
   "productCategories": [
-    { "href": "/category/power-bars",     "label": "Weights & Bumpers (12)" },
-    { "href": "/category/olympic-plates", "label": "Barbells (24)" },
+    { "href": "/shop", "label": "Weights & Bumpers (12)" },
+    { "href": "/shop-bar", "label": "Barbells (24)" },
     { "href": "/category/conditioning",   "label": "Conditioning (14)" },
-    { "href": "/category/racks-rigs",     "label": "Crossfit (9)" },
     { "href": "/category/straps-belts",   "label": "Accessories (18)" }
   ]
 }

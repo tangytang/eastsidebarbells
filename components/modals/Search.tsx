@@ -70,22 +70,22 @@ export default function Search() {
             <ul className="list-tags">
               <li>
                 <a href="#" className="radius-60 link">
-                  Dresses
+                  Weights
                 </a>
               </li>
               <li>
                 <a href="#" className="radius-60 link">
-                  Dresses women
+                  Strength Training
                 </a>
               </li>
               <li>
                 <a href="#" className="radius-60 link">
-                  Dresses midi
+                  Barbells
                 </a>
               </li>
               <li>
                 <a href="#" className="radius-60 link">
-                  Dress summer
+                  Platform
                 </a>
               </li>
             </ul>

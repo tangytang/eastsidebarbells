@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import ProductCard from "@/components/productCards/ProductCard";
-import { products2 } from "@/data/products";
+import { products, products2 } from "@/data/products";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -35,7 +35,7 @@ export default function Lookbook() {
                 <span />
               </div>
               <div className="loobook-product-wrap">
-                <LookBookCard product={products2[0]} />
+                <LookBookCard product={products[3]} />
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Lookbook() {
                 <span />
               </div>
               <div className="loobook-product-wrap">
-                <LookBookCard product={products2[1]} />
+                <LookBookCard product={products2[0]} />
               </div>
             </div>
           </div>
@@ -64,8 +64,7 @@ export default function Lookbook() {
             className="text-body-default text_secondary wow fadeInUp"
             data-wow-delay="0s"
           >
-            Quality equipment and interior design for fitness enthusiasts and
-            gym owners.
+            Train strength and power from the comfort of your home.
           </p>
         </div>
         <Swiper
@@ -84,7 +83,7 @@ export default function Lookbook() {
             el: ".spd5",
           }}
         >
-          {products2.map((product, i) => (
+          {products.map((product, i) => (
             <SwiperSlide key={i} className="swiper-slide">
               <ProductCard product={product} />
             </SwiperSlide>

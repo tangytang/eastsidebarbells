@@ -6,9 +6,10 @@ import Image from "next/image";
 import { Navigation, Pagination } from "swiper/modules";
 const sliderData = [
   {
-    imgSrc: "/images/slider/slider-home3-1.jpg",
-    title: "Gym Equipment in Singapore",
-    description: "Buy high-quality gym equipment online in Singapore.",
+    imgSrc: "/images/banner/eastside-banner.webp",
+    title: "Barbells & Weights in Singapore",
+    description:
+      "Buy barbell weight plates for weightlifting, crossfit, hyrox, and general conditioning in Singapore. Free Delivery & Quality Guaranteed*.",
   },
   {
     imgSrc: "/images/slider/slider-home3-2.jpg",
@@ -62,8 +63,8 @@ export default function Hero() {
                   </p>
                 </div>
                 <div className="fade-item fade-item-3">
-                  <a href="#" className="tf-btn btn-white mx-auto">
-                    Explore Collection <i className="icon-arrow-up-right" />
+                  <a href="#shop" className="tf-btn btn-white mx-auto">
+                    All Products <i className="icon-arrow-up-right" />
                   </a>
                 </div>
               </div>

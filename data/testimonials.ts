@@ -32,14 +32,14 @@ export const testimonials = [
 export const testimonialData = [
   {
     quote:
-      "Su was incredibly helpful in helping me select the best equipment for my strength needs. The equipment remains as good as new for the past year, and I have no regrets purchasing such quality gym equipment.",
+      "Su was incredibly helpful in helping me select the correct weight plates for our gym. The rubber bumpers were perfect since we needed to reduce the noise at our facility from dropped weights.",
     author: "Lisa ",
     role: "Crossfit Box Owner",
     wow: true,
   },
   {
     quote:
-      "Ivan was very patient and helped me select the best equipment for my strength needs. The equipment remains as good as new for the past year, and I have no regrets purchasing such quality gym equipment.",
+      "Ivan was very patient and helped me select the correct equipment for my powerlifting meet. After 12-months of abuse, the plates still hold up super well.",
     author: "Noel",
     role: "Gym Bro",
     wow: false,

@@ -2,9 +2,15 @@ import ProductCard from "@/components/productCards/ProductCard";
 import { products } from "@/data/products";
 import React from "react";
 
-export default function Products1({ cardStyle = 1 }) {
+export default function Products1({
+  id,
+  cardStyle = 1,
+}: {
+  id?: string;
+  cardStyle?: number;
+}) {
   return (
-    <section className="flat-spacing-5 pt-0">
+    <section id={id} className="flat-spacing-5 pt-0">
       <div className="container">
         <div className="row">
           <div className="col-12">

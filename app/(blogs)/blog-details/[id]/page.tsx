@@ -2,7 +2,7 @@ import BlogDetails from "@/components/blogs/BlogDetails";
 import RelatedBlogs from "@/components/blogs/RelatedBlogs";
 
 import Header1 from "@/components/headers/Header1";
-import Topbar1 from "@/components/headers/Topbar1";
+import Topbar2 from "@/components/headers/Topbar2";
 import React from "react";
 import type { Metadata } from "next";
 import Breadcumb from "@/components/blogs/Breadcumb";
@@ -24,7 +24,7 @@ export default async function Page({
 
   return (
     <>
-      <Topbar1 />
+      <Topbar2 />
       <Header1 />
       <div className="main-content">
         {blog ? (

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { testimonialData } from "@/data/testimonials";
 import React from "react";
+import { products } from "@/data/products";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -34,7 +35,7 @@ export default function Testimonials() {
                           <div className="icon">
                             <i className="icon-quote-1" />
                           </div>
-                          <p className="text-title">Customer Say!</p>
+                          <p className="text-title">Customer Say One Ah</p>
                         </div>
                         <h4
                           className={`text-onsurface${
@@ -81,13 +82,13 @@ export default function Testimonials() {
             </Swiper>
           </div>
           <div className="col-md-6">
-            <div className="collection-position style-3">
+            <a className="collection-position style-3" href="/shop">
               <div className="img-style">
                 <Image
                   className="lazyload effect-paralax"
-                  data-src="/images/banner/banner-2.jpg"
+                  data-src="/images/banner/lisa.webp"
                   alt="banner-cls"
-                  src="/images/banner/banner-2.jpg"
+                  src={"/images/banner/lisa.webp"}
                   width={1200}
                   height={1200}
                 />
@@ -97,22 +98,24 @@ export default function Testimonials() {
                   <div className="image-cart">
                     <Image
                       alt=""
-                      src="/images/shop/cart-item-3.jpg"
+                      src={products[4].imgSrc}
                       width={160}
                       height={160}
                     />
                   </div>
                   <div className="info">
                     <div className="name text-body-default">
-                      <a href="#" className="link text-title">
-                        Open Box - Adjustable Laptop Stand
+                      <a href={"#"} className="link text-title">
+                        {products[4].title}
                       </a>
                     </div>
-                    <div className="price text-button">$60.00</div>
+                    <div className="price text-button">
+                      SGD {products[4].price}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

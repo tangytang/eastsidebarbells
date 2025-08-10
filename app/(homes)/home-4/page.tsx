@@ -6,7 +6,7 @@ import Products2 from "@/components/common/Products2";
 import ShopGram from "@/components/common/ShopGram";
 
 import Header1 from "@/components/headers/Header1";
-import Topbar1 from "@/components/headers/Topbar1";
+import Topbar2 from "@/components/headers/Topbar2";
 import Collections2 from "@/components/homes/home-4/Collections2";
 import Hero from "@/components/homes/home-4/Hero";
 import Lookbook from "@/components/homes/home-4/Lookbook";
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <Topbar1 />
+      <Topbar2 />
       <Header1 />
       <Hero />
       <Categories />

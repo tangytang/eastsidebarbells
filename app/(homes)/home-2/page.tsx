@@ -7,7 +7,7 @@ import Collections2 from "@/components/homes/home-2/Collections2";
 import Hero from "@/components/homes/home-2/Hero";
 import Lookbook from "@/components/homes/home-2/Lookbook";
 import Products2 from "@/components/homes/home-2/Products2";
-import Topbar1 from "@/components/headers/Topbar1";
+import Topbar2 from "@/components/headers/Topbar2";
 import React from "react";
 import Testimonials from "@/components/common/Testimonials";
 import Blogs from "@/components/common/Blogs";
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <Topbar1 />
+      <Topbar2 />
       <Header1 />
       <Hero />
       <Categories />

@@ -1,28 +1,20 @@
 import Breadcumb from "@/components/common/Breadcumb";
 
 import Header1 from "@/components/headers/Header1";
-import Topbar1 from "@/components/headers/Topbar1";
+import Topbar2 from "@/components/headers/Topbar2";
 import Faqs from "@/components/otherPages/Faqs";
 import React from "react";
 
-import type { Metadata } from "next";
+import { SEO } from "@/components/common/Seo";
 
-export const metadata: Metadata = {
-  title: "Faqs || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
-};
+export const metadata = SEO;
 
 export default function page() {
   return (
     <>
-      <Topbar1 />
+      <Topbar2 />
       <Header1 />
-      <Breadcumb
-        imgSrc="/images/page-title/page-title-7.jpg"
-        pageName="Faqs"
-        pageTitle="Faqs"
-      />
-
+      <Breadcumb pageName="Faqs" pageTitle="Faqs" />
       <Faqs />
     </>
   );

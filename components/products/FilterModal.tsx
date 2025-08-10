@@ -95,7 +95,7 @@ export default function FilterModal({ allProps }: FilterSidebarProps) {
               </div>
             </div>
           </div>
-          <div className="widget-facet facet-size">
+          {/* <div className="widget-facet facet-size">
             <h6 className="facet-title">Size</h6>
             <div className="facet-size-box size-box">
               {sizes.map((size, index) => (
@@ -118,8 +118,8 @@ export default function FilterModal({ allProps }: FilterSidebarProps) {
                 Free Size
               </span>
             </div>
-          </div>
-          <div className="widget-facet facet-color">
+          </div> */}
+          {/* <div className="widget-facet facet-color">
             <h6 className="facet-title">Colors</h6>
             <div className="facet-color-box">
               {colors.map((color, index) => (
@@ -135,8 +135,8 @@ export default function FilterModal({ allProps }: FilterSidebarProps) {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="widget-facet facet-fieldset">
+          </div> */}
+          {/* <div className="widget-facet facet-fieldset">
             <h6 className="facet-title">Availability</h6>
             <div className="box-fieldset-item">
               {availabilityOptions.map((option, index) => (
@@ -166,8 +166,8 @@ export default function FilterModal({ allProps }: FilterSidebarProps) {
                 </fieldset>
               ))}
             </div>
-          </div>
-          <div className="widget-facet facet-fieldset">
+          </div> */}
+          {/* <div className="widget-facet facet-fieldset">
             <h6 className="facet-title">Brands</h6>
             <div className="box-fieldset-item">
               {brands.map((brand, index) => (
@@ -198,7 +198,7 @@ export default function FilterModal({ allProps }: FilterSidebarProps) {
                 </fieldset>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="canvas-bottom">
           <button

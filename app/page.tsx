@@ -15,8 +15,9 @@ import type { Metadata } from "next";
 import Topbar2 from "@/components/headers/Topbar2";
 
 export const metadata: Metadata = {
-  title: "Home 03 || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
+  title: "Buy Barbells & Weights in Singapore",
+  description:
+    "Buy barbell weight plates, bumpers, and bars for weightlifting, crossfit, hyrox, and general conditioning in Singapore. Free Delivery & Quality Guaranteed*.",
 };
 
 export default function page() {
@@ -26,7 +27,7 @@ export default function page() {
       <Header2 />
       <Hero />
       <Categories />
-      <Products1 cardStyle={3} />
+      <Products1 id="shop" cardStyle={3} />
       <Lookbook />
       {/* <Products2 /> */}
       <Testimonials />

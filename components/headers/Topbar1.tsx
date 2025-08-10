@@ -7,7 +7,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import LanguageSelect from "../common/LanguageSelect";
 import CurrencySelect from "../common/CurrencySelect";
 
-export default function Topbar1() {
+export default function Topbar2() {
   return (
     <div className="tf-topbar">
       <div className="container-full">

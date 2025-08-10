@@ -14,7 +14,7 @@ export default function Breadcumb({
   pageTitle = "About Us",
   pageName = "About Us",
   parentPage = "Pages",
-  imgSrc = "/images/page-title/page-title-6.jpg",
+  imgSrc = "/images/banner/eastside-banner-2.webp",
 }: BreadcumbProps) {
   const parallaxRef = useRef<HTMLDivElement>(null);
 

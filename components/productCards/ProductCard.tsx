@@ -215,7 +215,7 @@ export default function ProductCard({
         ${product.price.toFixed(2)}
       </div>
 
-      <ul className="list-color-product">
+      {/* <ul className="list-color-product">
         {product.swatches.map((swatch, index) => (
           <li
             key={index}
@@ -244,7 +244,7 @@ export default function ProductCard({
             />
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ProgressBarComponent from "../common/Progressbar";
 import { useContextElement } from "@/context/Context";
-import { products3 } from "@/data/products";
+import { products2 } from "@/data/products";
 
 export default function ShoppingCart() {
   const [openTool, setOpenTool] = useState(-1);
@@ -28,7 +28,7 @@ export default function ShoppingCart() {
             <h6 className="title">You May Also Like</h6>
             <div className="wrap-recommendations">
               <div className="list-cart">
-                {products3.map((product, i) => (
+                {products2.map((product, i) => (
                   <div key={i} className="list-cart-item">
                     <div className="image">
                       <Image

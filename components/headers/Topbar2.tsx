@@ -66,11 +66,13 @@ export default function Topbar2() {
               <Link href={`/about`} className=" text-caption-1 link">
                 About
               </Link>
-              <Link href={`/contact`} className=" text-caption-1 link">
-                Contact
-              </Link>
-              <Link href={`/store-list`} className=" text-caption-1 link">
-                Location
+              <Link
+                href="https://wa.me/6598182573?text=Hi%2C%20I%27m%20interested%20in%20your%20products"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-caption-1 link"
+              >
+                WhatsApp Now
               </Link>
             </div>
           </div>

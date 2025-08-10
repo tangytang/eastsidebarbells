@@ -141,8 +141,8 @@ export default function Header1({ parentClass = "header-default" }) {
                   alt="logo"
                   className="logo"
                   src="/images/logo/logo.svg"
-                  width={154}
-                  height={38}
+                  width={200}
+                  height={50}
                 />
               </Link>
             </div>

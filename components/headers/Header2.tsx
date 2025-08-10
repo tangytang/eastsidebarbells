@@ -144,15 +144,15 @@ export default function Header2() {
                   alt="logo"
                   className="logo"
                   src="/images/logo/logo-white.svg"
-                  width={154}
-                  height={38}
+                  width={300}
+                  height={50}
                 />
                 <Image
                   alt="logo"
                   className="logo-black"
                   src="/images/logo/logo.svg"
-                  width={154}
-                  height={38}
+                  width={300}
+                  height={50}
                 />
               </Link>
             </div>
