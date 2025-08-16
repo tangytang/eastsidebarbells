@@ -12,6 +12,7 @@ import {
 } from "@/data/menu";
 import { usePathname } from "next/navigation";
 import LanguageSelect from "../common/LanguageSelect";
+
 type NavProps = {
   textColor?: string;
 };
@@ -83,138 +84,6 @@ export default function MobileMenu() {
                           isMenuActive(link) ? "active" : ""
                         }`}
                       >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-            <li
-              className={`nav-mb-item ${
-                isMenuParentActive2(shopPages) ? "active" : ""
-              } `}
-            >
-              <a
-                href="#dropdown-menu-two"
-                className="collapsed mb-menu-link"
-                data-bs-toggle="collapse"
-                aria-expanded="true"
-                aria-controls="dropdown-menu-two"
-              >
-                <span>Shop</span>
-                <span className="btn-open-sub" />
-              </a>
-              <div id="dropdown-menu-two" className="collapse">
-                <ul className="sub-nav-menu">
-                  {shopPages.map((menu, index) => (
-                    <li key={index}>
-                      <a
-                        href={`#sub-shop-${index}`}
-                        className="sub-nav-link collapsed"
-                        data-bs-toggle="collapse"
-                        aria-expanded="true"
-                        aria-controls={`sub-shop-${index}`}
-                      >
-                        <span>{menu.title}t</span>
-                        <span className="btn-open-sub" />
-                      </a>
-                      <div id={`sub-shop-${index}`} className="collapse">
-                        <ul className="sub-nav-menu sub-menu-level-2">
-                          {menu.links.map((link, idx) => (
-                            <li key={idx}>
-                              <Link
-                                href={link.href}
-                                className={`sub-nav-link ${
-                                  isMenuActive(link) ? "active" : ""
-                                }`}
-                              >
-                                {link.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-            <li
-              className={`nav-mb-item ${
-                isMenuParentActive2(shopDetailPages) ? "active" : ""
-              } `}
-            >
-              <a
-                href="#dropdown-menu-three"
-                className="collapsed mb-menu-link"
-                data-bs-toggle="collapse"
-                aria-expanded="true"
-                aria-controls="dropdown-menu-three"
-              >
-                <span>Products</span>
-                <span className="btn-open-sub" />
-              </a>
-              <div id="dropdown-menu-three" className="collapse">
-                <ul className="sub-nav-menu">
-                  {shopDetailPages.map((group, index) => (
-                    <li key={index}>
-                      <a
-                        href={`#sub-products-${index}`}
-                        className="sub-nav-link collapsed"
-                        data-bs-toggle="collapse"
-                        aria-expanded="true"
-                        aria-controls={`sub-products-${index}`}
-                      >
-                        <span>{group.title}</span>
-                        <span className="btn-open-sub" />
-                      </a>
-                      <div id={`sub-products-${index}`} className="collapse">
-                        <ul className="sub-nav-menu sub-menu-level-2">
-                          {group.links.map((link, idx) => (
-                            <li key={idx}>
-                              <Link
-                                href={link.href}
-                                className={`sub-nav-link ${
-                                  isMenuActive(link) ? "active" : ""
-                                }`}
-                              >
-                                {link.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-            <li
-              className={`nav-mb-item ${
-                isMenuParentActive(blogLinks) ? "active" : ""
-              } `}
-            >
-              <a
-                href="#dropdown-menu-four"
-                className="collapsed mb-menu-link"
-                data-bs-toggle="collapse"
-                aria-expanded="true"
-                aria-controls="dropdown-menu-four"
-              >
-                <span>Blog</span>
-                <span className="btn-open-sub" />
-              </a>
-              <div id="dropdown-menu-four" className="collapse">
-                <ul className="sub-nav-menu">
-                  {blogLinks.map((link, index) => (
-                    <li key={index}>
-                      <Link
-                        href={link.href}
-                        className={`sub-nav-link ${
-                          isMenuActive(link) ? "active" : ""
-                        }`}
-                      >
                         {link.label}
                       </Link>
                     </li>
@@ -224,23 +93,23 @@ export default function MobileMenu() {
             </li>
             <li
               className={`nav-mb-item ${
-                isMenuParentActive(otherPages) ? "active" : ""
+                isMenuParentActive(demoPages) ? "active" : ""
               } `}
             >
               <a
-                href="#dropdown-menu-five"
+                href="#dropdown-menu-one"
                 className="collapsed mb-menu-link"
                 data-bs-toggle="collapse"
                 aria-expanded="true"
-                aria-controls="dropdown-menu-five"
+                aria-controls="dropdown-menu-one"
               >
-                <span>Page</span>
+                <span>Products</span>
                 <span className="btn-open-sub" />
               </a>
-              <div id="dropdown-menu-five" className="collapse">
+              <div id="dropdown-menu-one" className="collapse">
                 <ul className="sub-nav-menu">
-                  {otherPages.map((link, index) => (
-                    <li key={index}>
+                  {shopDetailPages.map((link, i) => (
+                    <li key={i}>
                       <Link
                         href={link.href}
                         className={`sub-nav-link ${
@@ -302,32 +171,6 @@ export default function MobileMenu() {
                 </svg>
                 Search
               </Link>
-              <Link href={`/login`} className="site-nav-icon">
-                <svg
-                  className="icon"
-                  width={18}
-                  height={18}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                    stroke="#181818"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                    stroke="#181818"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                Login
-              </Link>
             </div>
             <div className="mb-notice">
               <Link href={`/contact`} className="text-need">
@@ -336,14 +179,10 @@ export default function MobileMenu() {
             </div>
             <ul className="mb-info">
               <li>
-                Address: 1234 Fashion Street, Suite 567, <br />
-                New York, NY 10001
+                Email: <b>strong@eastsidebarbells.com</b>
               </li>
               <li>
-                Email: <b>example@example.com</b>
-              </li>
-              <li>
-                Phone: <b>(212) 555-1234</b>
+                Phone: <b>(65) 98182573</b>
               </li>
             </ul>
           </div>
