@@ -7,7 +7,7 @@ import { Navigation, Pagination } from "swiper/modules";
 const sliderData = [
   {
     imgSrc: "/images/banner/eastside-banner.webp",
-    title: "Barbells & Weights in Singapore",
+    title: "Buy Weights, Bumpers, Calibrated Plates",
     description:
       "Buy barbell weight plates for weightlifting, crossfit, hyrox, and general conditioning in Singapore. Free Delivery & Quality Guaranteed*.",
   },

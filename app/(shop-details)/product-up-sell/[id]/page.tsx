@@ -11,8 +11,8 @@ import Details10 from "@/components/productDetails/Details10";
 
 export const metadata: Metadata = {
   title:
-    "Product Details || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
+    "Product Details || Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
+  description: "Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
 };
 
 export default async function page({

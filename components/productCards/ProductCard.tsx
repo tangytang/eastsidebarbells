@@ -73,7 +73,7 @@ export default function ProductCard({
   };
 
   const renderProductImage = () => (
-    <Link href={``} className="image-wrap">
+    <div className="image-wrap">
       <Image
         className="lazyload img-product"
         src={currentImage ? currentImage : product.imgSrc}
@@ -89,7 +89,7 @@ export default function ProductCard({
         width={600}
         height={600}
       />
-    </Link>
+    </div>
   );
 
   const renderSaleBadge = () =>
@@ -133,7 +133,7 @@ export default function ProductCard({
         </span>
       </a>
 
-      <a
+      {/* <a
         href="#compare"
         data-bs-toggle="modal"
         aria-controls="compare"
@@ -144,7 +144,7 @@ export default function ProductCard({
         <span className="tooltip">
           {isAddedtoCompareItem(product.id) ? "Compared" : "Compare"}
         </span>
-      </a>
+      </a> */}
     </div>
   );
 

@@ -9,8 +9,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "My Account Orders || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
+    "My Account Orders || Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
+  description: "Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
 };
 
 export default function page() {

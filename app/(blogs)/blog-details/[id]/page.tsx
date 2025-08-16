@@ -10,8 +10,8 @@ import { allBlogs } from "@/data/blogs";
 
 export const metadata: Metadata = {
   title:
-    "Blog Details || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
+    "Blog Details || Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
+  description: "Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
 };
 
 export default async function Page({

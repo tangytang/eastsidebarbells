@@ -18,8 +18,8 @@ import Header1 from "@/components/headers/Header1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home 02 || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
+  title: "Home 02 || Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
+  description: "Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
 };
 
 export default function page() {

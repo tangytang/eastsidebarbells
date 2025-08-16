@@ -16,7 +16,7 @@ import Head from "next/head";
 import Topbar2 from "@/components/headers/Topbar2";
 
 export const metadata: Metadata = {
-  title: "Buy Barbells & Weights in Singapore",
+  title: "Buy Weights, Bumpers, Calibrated Plates for Weightlifting, Crossfit, Hyrox & Powerlifting in Singapore",
   description:
     "Buy barbell weight plates, bumpers, and bars for weightlifting, crossfit, hyrox, and general conditioning in Singapore. Free Delivery & Quality Guaranteed*.",
 };
@@ -33,9 +33,9 @@ export default function page() {
       {/* <Products2 /> */}
       <Testimonials />
       <Collection />
-      <Blogs parentClass="flat-spacing-2 section-news-insight" />
+      {/* <Blogs parentClass="flat-spacing-2 section-news-insight" /> */}
       {/* <ShopGram /> */}
-      <Features parentClass="flat-spacing-2 pt-0" />
+      <Features parentClass="flat-spacing-2" />
     </>
   );
 }

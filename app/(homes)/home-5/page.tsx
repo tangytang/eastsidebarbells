@@ -15,8 +15,8 @@ import type { Metadata } from "next";
 import Topbar2 from "@/components/headers/Topbar2";
 
 export const metadata: Metadata = {
-  title: "Home 05 || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
+  title: "Home 05 || Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
+  description: "Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
 };
 
 export default function page() {

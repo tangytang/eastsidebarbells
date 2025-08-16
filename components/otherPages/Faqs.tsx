@@ -117,8 +117,7 @@ export default function Faqs() {
                             To place an order, browse our product catalog,
                             select your desired items, and add them to your
                             cart. Once you're ready, go to checkout, provide
-                            your shipping and payment details, and confirm the
-                            order.
+                            your shipping and payment details via WhatsApp.
                           </p>
                         </div>
                       </div>

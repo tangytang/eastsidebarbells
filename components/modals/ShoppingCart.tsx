@@ -103,7 +103,7 @@ export default function ShoppingCart() {
     <div className="modal fullRight fade modal-shopping-cart" id="shoppingCart">
       <div className="modal-dialog">
         <div className="modal-content">
-          <div className="tf-minicart-recommendations">
+          {/* <div className="tf-minicart-recommendations">
             <h6 className="title">You May Also Like</h6>
             <div className="wrap-recommendations">
               <div className="list-cart">
@@ -151,7 +151,7 @@ export default function ShoppingCart() {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="d-flex flex-column flex-grow-1 h-100">
             <div className="header">
               <h5 className="title">Shopping Cart</h5>
@@ -205,13 +205,10 @@ export default function ShoppingCart() {
                                 <div className="text-title">
                                   <Link
                                     href={`/product-detail/${product.id}`}
-                                    className="link line-clamp-1"
+                                    className="link line-clamp-1 flex-wrap"
                                   >
                                     {product.title}
                                   </Link>
-                                </div>
-                                <div className="text-secondary-2">
-                                  Gray, Size C
                                 </div>
                                 <div className="wg-quantity">
                                   <span
@@ -306,7 +303,7 @@ export default function ShoppingCart() {
                         className="tf-btn w-100 btn-onsurface"
                         onClick={handleWhatsAppOrder}
                       >
-                        Order via WhatsApp
+                        WhatsApp Order
                       </button>
                     </div>
                     <div className="text-center">

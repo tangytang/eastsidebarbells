@@ -5,14 +5,14 @@ import { SEO } from "@/components/common/Seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Buy Rubber Bumpers & Weights for Crossfit & Hyrox",
-  description: "Rubber bumpers and weights provide a larger surface area for reduced impact and sound absorption during workouts."
+  title: "Buy Weights, Bumpers, Calibrated Plates for Powerlifting",
+  description: "Our calibrated weight plates are designed to meet the demands of powerlifting."
 }
 
 export default function page() {
   return (
     <>
-      <Products initialFilters={{ categories: ["crossfit"] }} />
+      <Products initialFilters={{ categories: ["weightlifting"] }} />
     </>
   );
 }

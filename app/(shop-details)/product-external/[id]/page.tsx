@@ -10,8 +10,8 @@ import Details15 from "@/components/productDetails/Details15";
 
 export const metadata: Metadata = {
   title:
-    "Product Details || GearO - Office equipment eCommerce React Nextjs Template",
-  description: "GearO - Office equipment eCommerce React Nextjs Template",
+    "Product Details || Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
+  description: "Quality Bumpers, Weights, Competition Plates for Crossfit, Powerlifting, and Hyrox in SG",
 };
 
 export default async function page({
@@ -27,7 +27,6 @@ export default async function page({
       <Breadcumb product={product} />
       <Details15 product={product} />
       <Descriptions1 />
-      <RelatedProducts />
       <StickyProduct />
     </>
   );

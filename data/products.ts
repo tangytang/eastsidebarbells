@@ -23,7 +23,7 @@ export const products = [
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"],
     inStock: true,
     filterColor: ["Beige", "Orange", "Green", "Black", "Purple", "Dark Blue"],
-    filterCategory: ["weightlifting"],
+    filterCategory: ["weightlifting", "powerlifting"],
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
@@ -50,7 +50,7 @@ export const products = [
     filterBrands: ["Nike", "Zalando", "Adidas"],
     inStock: false,
     filterColor: ["Pink", "Green", "Grey", "Light Blue", "Dark Blue"],
-    filterCategory: ["weightlifting"],
+    filterCategory: ["weightlifting", "powerlifting"],
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "Best Seller"],
     tabFilterOptions: ["Bottoms", "On pieces", "Tops", "Sale"],
@@ -86,7 +86,7 @@ export const products = [
       "Light Blue",
       "Dark Blue",
     ],
-    filterCategory: ["weightlifting"],
+    filterCategory: ["weightlifting", "powerlifting"],
     filterSizes: ["XS", "S", "M", "L", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "On pieces", "Tops", "Skirts", "Dresses"],
@@ -131,7 +131,7 @@ export const products = [
       "Light Blue",
       "Dark Blue",
     ],
-    filterCategory: ["weightlifting"],
+    filterCategory: ["weightlifting", "powerlifting"],
     filterSizes: ["XS", "S", "M", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "Best Seller"],
     tabFilterOptions: ["Bottoms", "On pieces", "Skirts", "Dresses", "Sale"],
@@ -270,20 +270,19 @@ export const products2 = [
       },
     ],
     isOnisOnSale: false,
-    filterBrands: ["Accessories"],
+    filterBrands: ["accessory"],
     inStock: false,
     filterColor: [
       "Pink",
       "Red",
+      "Beige",
+      "Orange",
       "Green",
       "Black",
       "White",
       "Purple",
-      "Grey",
-      "Light Blue",
-      "Dark Blue",
     ],
-    filterCategory: ["Bags", "Booking", "Clothing", "Women", "Men", "Shoes"],
+    filterCategory: ["accessory"],
     filterSizes: ["XS", "S", "M", "L", "3XL"],
   },
   {
@@ -413,7 +412,7 @@ export const products3 = [
 
 export const productMain = [...products, ...products2, ...products3].slice(
   0,
-  12
+  100
 );
 export const galleryItems = [
   {

@@ -141,13 +141,9 @@ export default function Footer1() {
                                 ["Crossfit Bumper Plates", "/shop-crossfit"],
                                 ["Barbells", "/shop-bars"],
                                 ["About Us", "/about"],
-                                ["Personal Training", "/blog"],
-                                ["Blog", "/blog"],
                               ]
                             : [
                                 ["FAQ", "/faqs"],
-                                ["Shipping", "/product-detail/1"],
-                                ["Return & Refund", "/product-detail/1"],
                                 ["Privacy Policy", "/term-of-use"],
                                 ["Terms & Conditions", "/term-of-use"],
                               ]

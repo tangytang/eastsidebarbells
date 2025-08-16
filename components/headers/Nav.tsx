@@ -40,24 +40,16 @@ const MENU_JSON_STRING = `
   "shopDetailPages": [
     {
       "links": [
-        { "href": "/product-detail/1", "label": "Barbells" },
-        { "href": "/product-detail/2", "label": "Rubber Weight Plates (5-25kg)" },
-        { "href": "/product-detail/3", "label": "Calibrated Weight Plates (5-25kg)" }
-      ]
-    },
-    {
-      "links": [
-        { "href": "/product-detail/4", "label": "" },
-        { "href": "/product-detail/5", "label": "Storage" },
-        { "href": "/product-detail/6", "label": "Barbells" }
+        { "href": "/shop-crossfit", "label": "Crossfit" },
+        { "href": "/shop-weightlifting", "label": "Olympic Weightlifting" },
+        { "href": "/shop-powerlifting", "label": "Powerlifting" }
       ]
     }
   ],
   "productCategories": [
     { "href": "/shop", "label": "Weights & Bumpers (12)" },
-    { "href": "/shop-bar", "label": "Barbells (24)" },
-    { "href": "/category/conditioning",   "label": "Conditioning (14)" },
-    { "href": "/category/straps-belts",   "label": "Accessories (18)" }
+    { "href": "/shop-bars", "label": "Barbells (3)" },
+    { "href": "/shop-bars", "label": "Accessories (3)" }
   ]
 }
 ` as const;
