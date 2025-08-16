@@ -17,6 +17,7 @@ import Share from "@/components/modals/Share";
 import Toolbar from "@/components/headers/Toolbar";
 import SidebarAccount from "@/components/modals/SidebarAccount";
 import Footer1 from "@/components/footers/Footer1";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({
   children,
@@ -29,6 +30,7 @@ export default function RootLayout({
         <div id="wrapper">
           <LayoutWrapper>
             <Context>
+              <GoogleAnalytics gaId="G-VMHHYD63F9" />
               {children}
               <Footer1 />
               <Toolbar />

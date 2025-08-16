@@ -12,6 +12,7 @@ import React from "react";
 import Features from "@/components/common/Features";
 
 import type { Metadata } from "next";
+import Head from "next/head";
 import Topbar2 from "@/components/headers/Topbar2";
 
 export const metadata: Metadata = {
